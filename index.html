@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team Project</title>
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.7;
+            background-color: #f7f7f7;
+            color: #333;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #005a9c;
+            padding-bottom: 15px;
+        }
+
+        h1 {
+            color: #005a9c;
+        }
+
+        h2 {
+            color: #005a9c;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+
+        h3 {
+            color: #333;
+            margin-top: 30px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 1.05em;
+        }
+        /* This class is for the main student task */
+        .task-box {
+            background-color: #fffbe6;
+            border: 1px solid #ffde8a;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        /* This class is for the instructions section */
+        .instructions {
+            background-color: #f4f8ff;
+            border: 1px solid #c9deff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        code {
+            font-family: "Courier New", Courier, monospace;
+            background-color: #eef;
+            padding: 3px 5px;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 40px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Project Title Goes Here</h1>
+    </header>
+
+    <main>
+
+        <section id="description">
+            <h2>Project Description</h2>
+            <p>This is a placeholder description for our project. We will update this section to describe our goals, features, and what problem we aim to solve.</p>
+        </section>
+
+        <section id="team" class="task-box">
+            <h2>👋 👋 👋 👋 👋 Team Members (Your Task is Here!)👋 👋 👋 👋 👋 </h2>
+            <p><strong>Your Goal:</strong> Add your name to this list using the Fork & Pull Request workflow described in the instructions below.</p>
+            <ul>
+                <li>Superman (Example)</li>
+                <li>Batman (Example)</li>
+                <li>Spiderman(Example)</li>
+                <li>Superwoman (Example)</li>
+                <li>Chairman (Example)</li>
+
+            </ul>
+        </section>
+
+        <section id="github-guide" class="instructions">
+            <h2>📚 GitHub Collaboration Instructions</h2>
+            <p>This guide explains how to collaborate on our team project. We will have **one "Repo Owner"** who sets up the project and **all other "Contributors"** who will "fork" the project to add their changes.</p>
+
+            <hr>
+
+            <h3>Part 1: For the "Repo Owner" (One student per team)</h3>
+            <p>Your job is to create the main "upstream" repository that your teammates will contribute to.</p>
+            <ol>
+                <li>
+                    <strong>Create the Repository:</strong>
+                    <ul>
+                        <li>Go to GitHub and log in. Click the <strong>+</strong> icon and select <strong>New repository</strong>.</li>
+                        <li><strong>Repository name:</strong> Give it a clear name (e.g., <code>engr1340-team-project</code>).</li>
+                        <li><strong>IMPORTANT:</strong> Select <strong>Public</strong> so your teammates can find and fork it.</li>
+                        <li>Initialize with a README. And you will edit this file later.</li>
+                        <li>Click <strong>Create repository</strong>.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Upload this `index.html` File:</strong>
+                    <ul>
+                        <li>On your new repository's main page, open the README file and click the "edit this file".</li>
+                        <li>Type your project name and all your teammates' name here. Then Click <strong>Commit changes</strong> to save.</li>
+                        <li>On your new repository's main page, click the <strong>uploading an existing file</strong> link.</li>
+                        <li>Drag and drop this <code>index.html</code> file onto the page.</li>
+                        <li>In the "Commit changes" box, type a message like <code>Add initial index.html template</code>.</li>
+                        <li>Click <strong>Commit changes</strong>.</li>
+
+                    </ul>
+                </li>
+                <li>
+                    <strong>Share the Link:</strong>
+                    <ul>
+                        <li>Copy the URL of your repository (e.g., <code>https://github.com/YourUsername/engr1340-team-project</code>).</li>
+                        <li>Share this link with your teammates. Your setup work is done!</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h3>Part 2: For "Contributors" (All other team members)</h3>
+            <p>Your job is to make a personal copy (a "fork") of the main repository, make your changes, and then propose those changes back using a "Pull Request."</p>
+            <ol>
+                <li>
+                    <strong>Fork the Repository:</strong>
+                    <ul>
+                        <li>Go to the GitHub repository URL your "Repo Owner" shared.</li>
+                        <li>In the top-right corner, click the <strong>Fork</strong> button. This creates a copy under *your* GitHub account.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Clone Your Fork:</strong>
+                    <ul>
+                        <li>Go to the page for <strong>your fork</strong> (the URL will be <code>github.com/YourUsername/...</code>).</li>
+                        <li>Click the green <strong>&lt; &gt; Code</strong> button and copy the <strong>HTTPS</strong> URL.</li>
+                        <li>In your computer's terminal (right click and "open in terminal"), run: <code>git clone [PASTE_THE_URL_YOU_COPIED]</code></li>
+                        <li><code>cd</code> into the new project folder: <code>cd [REPOSITORY_NAME]</code></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>Link to the Upstream (Team's) Repository:</strong>
+                    <ul>
+                        <li>Your local repo is currently only connected to <em>your fork</em> (named <code>origin</code>). You need to add a connection to the <em>team leader's</em> original repository (which we call <code>upstream</code>). This is a one-time setup step.</li>
+                        <li>
+                            Run this command, replacing <code>[TEAM_LEADER_URL]</code> with the URL of their repository (the one you forked from):
+                            <br><code>git remote add upstream [TEAM_LEADER_URL]</code>
+                        </li>
+                        <li>Verify that you have two remotes (<code>origin</code> pointing to your fork and <code>upstream</code> pointing to the leader's repo) by running: <br><code>git remote -v</code></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>Sync with Upstream Before You Work:</strong>
+                    <ul>
+                        <li><strong>IMPORTANT:</strong> Before you create a new branch, always get the latest changes from the team's main project. This prevents merge conflicts.</li>
+                        <li>Run this command to pull updates from the <code>upstream</code> (team leader's) <code>main</code> branch into your local <code>main</code> branch: <br><code>git pull upstream main</code></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>Create a New Branch:</strong>
+                    <ul>
+                        <li>Now that your local <code>main</code> branch is up-to-date, create a new branch for your edits. <strong>Never</strong> work directly on <code>main</code>.</li>
+                        <li>Run: <code>git checkout -b add-my-name</code> (You can name the branch anything, like <code>feature/my-name</code>).</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Edit the File (This is the Task!):</strong>
+                    <ul>
+                        <li>Open this <code>index.html</code> file in your code editor.</li>
+                        <li>Find the "Team Members" section above and add your name to the list.</li>
+                        <li>Save the file.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Commit and Push Your Changes:</strong>
+                    <ul>
+                        <li>Stage your change: <code>git add index.html</code></li>
+                        <li>Commit your change: <code>git commit -m "Add [Your Name] to team list"</code></li>
+                        <li>Push your branch to <strong>your fork</strong> on GitHub (<code>origin</code>): <br><code>git push origin add-my-name</code></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Open a Pull Request (PR):</strong>
+                    <ul>
+                        <li>Go to your forked repository on GitHub.</li>
+                        <li>Click the <strong>Compare & pull request</strong> button (it usually appears in a yellow banner).</li>
+                        <li><strong>IMPORTANT:</strong> Check that the "base repository" is the Team Owner's original repo and the "head repository" is your fork.</li>
+                        <li>Add a title (e.g., "Add [Your Name] to team") and click <strong>Create pull request</strong>.</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h3>Part 3: For the "Repo Owner" (Merging)</h3>
+            <p>Your job is to review and approve your teammates' contributions.</p>
+            <ol>
+                <li>
+                    <strong>Review the Pull Request:</strong>
+                    <ul>
+                        <li>Go to your original repository on GitHub and click the <strong>Pull requests</strong> tab.</li>
+                        <li>Click on the new PR from your teammate.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Check the Changes:</strong>
+                    <ul>
+                        <li>Click the <strong>Files changed</strong> tab to see exactly what they added.</li>
+                        <li>If it all looks good, go back to the <strong>Conversation</strong> tab.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Merge the PR:</strong>
+                    <ul>
+                        <li>Click the green <strong>Merge pull request</strong> button.</li>
+                        <li>Click <strong>Confirm merge</strong>.</li>
+                        <li>Success! Your teammate's changes are now in the <code>main</code> branch. You can delete their branch after merging.</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; ENGR1340-015-2025FALL </p>
+    </footer>
+
+</body>
+</html>
