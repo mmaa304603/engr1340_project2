@@ -4,6 +4,14 @@ function showScreen(screenId) {
         screen.classList.remove('active');
     });
     document.getElementById(screenId).classList.add('active');
+    // If the map/search screen is shown, focus the building search input for convenience
+    if (screenId === 'mapScreen') {
+        const searchInput = document.getElementById('buildingSearch');
+        if (searchInput) {
+            // small delay ensures element is visible before focusing
+            setTimeout(() => searchInput.focus(), 50);
+        }
+    }
 }
 function filterBuildings() {
     const searchInput = document.getElementById('buildingSearch').value.toLowerCase();

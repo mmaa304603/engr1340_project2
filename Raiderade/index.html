@@ -56,8 +56,8 @@
             <h1 onclick="showScreen('mapScreen')">Raiderade</h1>
             <div class="search-bar">
                 <input type="text" placeholder="Search...">
-                <button>🔍</button>
-                <button onclick="showScreen('buildingsScreen')">👤</button>
+                <button onclick="showScreen('buildingsScreen')">🔍</button>
+                <button>👤</button>
             </div>
         </div>
         <div class="container">
@@ -81,7 +81,7 @@
             <h1 onclick="showScreen('mapScreen')">Raiderade</h1>
             <div class="search-bar">
                 <input type="text" placeholder="Search...">
-                <button>🔍</button>
+                <button onclick="showScreen('buildingsScreen')">🔍</button>
                 <button onclick="showScreen('accountScreen')">👤</button>
             </div>
         </div>
@@ -94,102 +94,8 @@
                 </div>
 
                 <div class="map-wrapper">
-                    <div class="campus-map" id="interactiveMap">
-                        <div class="campus-label">TTU</div>
-                        
-                        <!-- Roads -->
-                        <div class="road road-h" style="top: 25%;"></div>
-                        <div class="road road-h" style="top: 50%;"></div>
-                        <div class="road road-h" style="top: 75%;"></div>
-                        <div class="road road-v" style="left: 20%;"></div>
-                        <div class="road road-v" style="left: 50%;"></div>
-                        <div class="road road-v" style="left: 80%;"></div>
-                        
-                        <!-- Key Academic Buildings -->
-                        <div class="building-marker" style="top: 20%; left: 45%; background: #8b0000;" title="Administration Building">
-                            ADMIN
-                        </div>
-                        <div class="building-marker" style="top: 35%; left: 25%; background: #1e90ff;" title="Chemistry Building">
-                            CHEM
-                        </div>
-                        <div class="building-marker" style="top: 28%; left: 65%; background: #1e90ff;" title="Biology Building">
-                            BIOL
-                        </div>
-                        <div class="building-marker" style="top: 42%; left: 15%; background: #228b22;" title="Civil Engineering">
-                            CIVILE
-                        </div>
-                        <div class="building-marker" style="top: 48%; left: 55%; background: #ff8c00;" title="Student Union Building">
-                            SUB
-                        </div>
-                        <div class="building-marker" style="top: 38%; left: 75%; background: #1e90ff;" title="Computer Science & EE">
-                            CS & EE
-                        </div>
-                        <div class="building-marker" style="top: 65%; left: 30%; background: #228b22;" title="Petroleum Engineering">
-                            PETRO
-                        </div>
-                        <div class="building-marker" style="top: 72%; left: 60%; background: #9370db;" title="Recreation Center">
-                            REC
-                        </div>
-                        <div class="building-marker" style="top: 58%; left: 78%; background: #4169e1;" title="Library">
-                            LIBRARY
-                        </div>
-                        <div class="building-marker" style="top: 15%; left: 25%; background: #1e90ff;" title="Mathematics & Statistics">
-                            MATH
-                        </div>
-                        <div class="building-marker" style="top: 52%; left: 35%; background: #ff6347;" title="Rawls College of Business">
-                            RCOBA
-                        </div>
-                        <div class="building-marker" style="top: 25%; left: 82%; background: #1e90ff;" title="Psychology">
-                            PSYC
-                        </div>
-                        <div class="building-marker" style="top: 68%; left: 18%; background: #228b22;" title="Mechanical Engineering">
-                            MECH
-                        </div>
-                        <div class="building-marker" style="top: 80%; left: 45%; background: #9370db;" title="United Supermarkets Arena">
-                            USA
-                        </div>
-                        <div class="building-marker" style="top: 32%; left: 48%; background: #daa520;" title="Holden Hall">
-                            HOLDEN
-                        </div>
-                        <div class="building-marker" style="top: 45%; left: 42%; background: #20b2aa;" title="Health & Human Sciences">
-                            HHS
-                        </div>
-                        <div class="building-marker" style="top: 58%; left: 25%; background: #1e90ff;" title="Architecture">
-                            ARCH
-                        </div>
-                        <div class="building-marker" style="top: 85%; left: 70%; background: #32cd32;" title="Jones AT&T Stadium">
-                            JONES
-                        </div>
-                    </div>
-                    
-                    <div class="map-legend">
-                        <h3>Building Categories</h3>
-                        <div class="legend-items">
-                            <div class="legend-item">
-                                <div class="legend-color" style="background: #8b0000;"></div>
-                                <span>Administration</span>
-                            </div>
-                            <div class="legend-item">
-                                <div class="legend-color" style="background: #1e90ff;"></div>
-                                <span>Academic Buildings</span>
-                            </div>
-                            <div class="legend-item">
-                                <div class="legend-color" style="background: #228b22;"></div>
-                                <span>Engineering</span>
-                            </div>
-                            <div class="legend-item">
-                                <div class="legend-color" style="background: #ff8c00;"></div>
-                                <span>Student Services</span>
-                            </div>
-                            <div class="legend-item">
-                                <div class="legend-color" style="background: #9370db;"></div>
-                                <span>Recreation & Athletics</span>
-                            </div>
-                            <div class="legend-item">
-                                <div class="legend-color" style="background: #ff6347;"></div>
-                                <span>Business</span>
-                            </div>
-                        </div>
+                    <div class="map-image">
+                        <img src="images/maps.png" alt="Texas Tech University Campus Map" class="map-image">
                     </div>
 
                     <div class="building-list" id="buildingList">

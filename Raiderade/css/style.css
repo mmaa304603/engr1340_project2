@@ -52,22 +52,49 @@ body {
     margin: 0 auto;
 }
 .welcome-screen {
-    background: url('../images/blur.png') no-repeat center center;
-    background-size: cover;
-    min-height: 80vh;        
-    display: flex;             
-    flex-direction: column;    
-    justify-content: center;   
-    align-items: center;       
+    position: relative;
+    inset: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 0 40px;          
+    padding: 0 40px;
+    overflow: hidden;
     border-radius: 8px;
+}
+.welcome-screen::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('../images/maps.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    transform: scale(1.05);
+    z-index: 0;
+    pointer-events: none;
+}
+.welcome-screen > * {
+    position: relative;
+    z-index: 1;
+}
+.welcome-buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+    z-index: 1;
 }
 .banner {
     background: #c41e3a;
     color: white;
     padding: 20px;
-    margin: -60px -40px 40px;
+    margin: -100px -40px 40px;
     clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
     font-size: 32px;
     font-weight: bold;
@@ -141,9 +168,6 @@ body {
     background: #a01828;
     transform: scale(1.1);
 }
-
-
-
 .map-screen {
     min-height: calc(100vh - 62px);
     background: #f5f5f5;
@@ -165,6 +189,13 @@ body {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.map-image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    pointer-events: none;
+    user-select: none;
 }
 .campus-map {
     width: 100%;
