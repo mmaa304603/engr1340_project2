@@ -18,7 +18,7 @@ engr_project/
 │   ├── js/
 │   └── index.html
 │
-├── index.html
+├── docs/
 └── README.md
 ```
 
