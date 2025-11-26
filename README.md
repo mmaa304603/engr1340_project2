@@ -23,7 +23,7 @@ engr_project/
 ```
 
 ## 📘 How to Use
-1. Open `index.html` in any browser.
+1. Open [`index.html`](https://mmaa304603.github.io/engr1340_project2/) in any browser.
 2. Start on the "Welcome Screen".
 3. Continue as a guest or navigate to the "Account" page.
 4. Select a building or use the "map search bar" to explore fountain locations.
