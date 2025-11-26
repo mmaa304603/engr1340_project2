@@ -10,14 +10,17 @@ Raiderade is a simple web application designed to help students quickly find rel
 - Mobile-friendly, lightweight design
 
 ## 📂 Project Structure
+```txt
 engr_project/
-|-------Raiderade
-|          |-------css
-|          |-------images
-|          |-------js
-|          |-------index.html
-|-------index.html
-|-------Readme.md
+├── Raiderade/
+│   ├── css/
+│   ├── images/
+│   ├── js/
+│   └── index.html
+│
+├── index.html
+└── README.md
+```
 
 ## 📘 How to Use
 1. Open `index.html` in any browser.
