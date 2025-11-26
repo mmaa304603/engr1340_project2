@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raiderade</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Welcome Screen -->
+    <div id="welcomeScreen" class="screen active">
+        <div class="container">
+            <div class="welcome-screen">
+                <div class="banner">RAIDERADE</div>
+                <div class="welcome-buttons">
+                    <button class="btn" onclick="showScreen('buildingsScreen')">Continue as Guest</button>
+                    <button class="btn" onclick="showScreen('accountScreen')">Create an account<br>or<br>Log in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Buildings Screen -->
+    <div id="buildingsScreen" class="screen">
+        <div class="header">
+            <h1 onclick="showScreen('mapScreen')">Raiderade</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>🔍</button>
+                <button onclick="showScreen('accountScreen')">👤</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="button-grid">
+                <button class="btn" onclick="showScreen('mapScreen')">Student Union Building</button>
+                <button class="btn" onclick="showScreen('mapScreen')">Chemistry Building</button>
+                <button class="btn" onclick="showScreen('mapScreen')">Administration</button>
+                <button class="btn" onclick="showScreen('mapScreen')">Civil Engineering Building</button>
+                <button class="btn" onclick="showScreen('mapScreen')">Health & Human Science</button>
+                <button class="btn" onclick="showScreen('mapScreen')">Computer Science & Electrical Engineering Building</button>
+                <button class="btn" onclick="showScreen('mapScreen')">Petroleum Engineering Building</button>
+                <button class="btn" onclick="showScreen('mapScreen')">REC Center</button>
+                <button class="btn" onclick="showScreen('mapScreen')">Library</button>
+            </div>
+        </div>
+        <div class="back-arrow" onclick="showScreen('welcomeScreen')">←</div>
+    </div>
+
+
+
+    <!-- Account Settings Screen -->
+    <div id="accountScreen" class="screen">
+        <div class="header">
+            <h1 onclick="showScreen('mapScreen')">Raiderade</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button onclick="showScreen('buildingsScreen')">🔍</button>
+                <button>👤</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="button-grid">
+                <button class="btn">Settings & Accessibility</button>
+                <button class="btn">Password & Security</button>
+                <button class="btn">Personal Details</button>
+                <button class="btn">My Reviews</button>
+                <button class="btn">Feedback & Reports</button>
+            </div>
+            <button class="btn btn-large">Delete or Deactivate Account</button>
+        </div>
+        <div class="back-arrow" onclick="showScreen('buildingsScreen')">←</div>
+    </div>
+
+
+
+    <!-- Campus Map Screen -->
+    <div id="mapScreen" class="screen">
+        <div class="header">
+            <h1 onclick="showScreen('mapScreen')">Raiderade</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button onclick="showScreen('buildingsScreen')">🔍</button>
+                <button onclick="showScreen('accountScreen')">👤</button>
+            </div>
+        </div>
+        <div class="map-screen">
+            <div class="map-container">
+                <div class="map-title">Texas Tech University Campus Map</div>
+                
+                <div class="building-search">
+                    <input type="text" id="buildingSearch" placeholder="Search for buildings, departments, or facilities..." onkeyup="filterBuildings()">
+                </div>
+
+                <div class="map-wrapper">
+                    <div class="map-image">
+                        <img src="images/maps.png" alt="Texas Tech University Campus Map" class="map-image">
+                    </div>
+
+                    <div class="building-list" id="buildingList">
+                        <h3>Campus Buildings</h3>
+                        <div class="building-item"><span class="building-abbrev">ADMIN</span>Administration Building</div>
+                        <div class="building-item"><span class="building-abbrev">CHEM</span>Chemistry Building</div>
+                        <div class="building-item"><span class="building-abbrev">BIOL</span>Biology Building</div>
+                        <div class="building-item"><span class="building-abbrev">CIVILE</span>Civil Engineering</div>
+                        <div class="building-item"><span class="building-abbrev">SUB</span>Student Union Building</div>
+                        <div class="building-item"><span class="building-abbrev">CS & EE</span>Computer Science & Electrical Engineering</div>
+                        <div class="building-item"><span class="building-abbrev">PETRO</span>Petroleum Engineering</div>
+                        <div class="building-item"><span class="building-abbrev">REC</span>Recreation Center</div>
+                        <div class="building-item"><span class="building-abbrev">LIBRARY</span>University Library</div>
+                        <div class="building-item"><span class="building-abbrev">MATH</span>Mathematics & Statistics</div>
+                        <div class="building-item"><span class="building-abbrev">RCOBA</span>Rawls College of Business</div>
+                        <div class="building-item"><span class="building-abbrev">PSYC</span>Psychology</div>
+                        <div class="building-item"><span class="building-abbrev">MECH</span>Mechanical Engineering</div>
+                        <div class="building-item"><span class="building-abbrev">USA</span>United Supermarkets Arena</div>
+                        <div class="building-item"><span class="building-abbrev">HOLDEN</span>Holden Hall</div>
+                        <div class="building-item"><span class="building-abbrev">HHS</span>Health & Human Sciences</div>
+                        <div class="building-item"><span class="building-abbrev">ARCH</span>Architecture</div>
+                        <div class="building-item"><span class="building-abbrev">JONES</span>Jones AT&T Stadium</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="back-arrow" onclick="showScreen('buildingsScreen')">←</div>
+    </div>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
